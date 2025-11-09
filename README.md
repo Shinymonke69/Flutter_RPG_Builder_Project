@@ -31,9 +31,9 @@ flutter pub get
 npm install firebase
 ```
 3. Configure o Firebase para Web:
-- No seu navegador faça login no site do [Firebase](https://firebase.google.com/), logo após fazer login vá até [Firebase Console](https://console.firebase.google.com/) e crie um novo projeto do Firebase com nome de *rpg-builder* e siga os passos do Firebase.
-- Depois de criar sua Firebase ma visão geral do projeto terá um engrenagem e nela terá a opção de configurar seu projeto *Geral* -> *Adicionar Aplicativo* -> *web* -> Nome do app *rpg-builder* -> site do Firebase hosting vinculado *selecionar seu projeto*.
-- Após realizar tudo isso no seu vsCode na pasta lib edite seu *firebase_options.dart* com as informações que estão no seu Firebase Web:
+- No seu navegador faça login no site do [Firebase](https://firebase.google.com/), logo após fazer login vá até [Firebase Console](https://console.firebase.google.com/) e crie um novo projeto do Firebase com nome de ***rpg-builder*** e siga os passos do Firebase.
+- Depois de criar sua Firebase ma visão geral do projeto terá um engrenagem e nela terá a opção de configurar seu projeto ***Geral*** -> ***Adicionar Aplicativo*** -> ***web*** -> Nome do app ***rpg-builder*** -> site do Firebase hosting vinculado ***selecionar seu projeto***.
+- Após realizar tudo isso no seu vsCode na pasta lib edite seu ***firebase_options.dart*** com as informações que estão no seu Firebase Web:
 ```
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
@@ -77,8 +77,8 @@ class DefaultFirebaseOptions {
     }
 }
 ```
-- No Firebase vai ter uma aba de *Criação* -> *Authentication* -> *Vamos começar* -> *E-mail/senha* -> *E-mail/senha ativar* e *salvar*.
-- Ainda no Firebase novamente *Criação* -> *FireStore Database* -> *Criar banco de dados* -> *Standart* -> *Local southamerica-east1 (São Paulo)* -> *Avançar* e *Criar* -> em *Regras* altere *false* para *true*(Essas regras de segurança estarão definidas como públicas. Com essa configuração, qualquer pessoa pode roubar, modificar ou excluir informações do seu banco de dados, *use somente para testes e uso pedagógicos*).
+- No Firebase vai ter uma aba de ***Criação*** -> ***Authentication*** -> ***Vamos começar*** -> ***E-mail/senha*** -> ***E-mail/senha ativar*** e ***salvar***.
+- Ainda no Firebase novamente ***Criação*** -> ***FireStore Database*** -> ***Criar banco de dados*** -> ***Standart*** -> ***Local southamerica-east1 (São Paulo)*** -> ***Avançar*** e ***Criar*** -> em ***Regras*** altere ***false*** para ***true***(Essas regras de segurança estarão definidas como públicas. Com essa configuração, qualquer pessoa pode roubar, modificar ou excluir informações do seu banco de dados, ***use somente para testes e uso pedagógicos***).
 4. Rode seu projeto no cmd ou bash:
 ```
 flutter run -d chrome
