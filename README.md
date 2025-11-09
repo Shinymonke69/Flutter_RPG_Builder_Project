@@ -91,7 +91,7 @@ Este projeto utiliza a API pública [D&D 5e API](https://www.dnd5eapi.co) para b
 - GET https://www.dnd5eapi.co/api/classes/ — retorna a lista de classes disponíveis.
 - GET https://www.dnd5eapi.co/api/races/ — retorna a lista de raças disponíveis.
 - GET https://www.dnd5eapi.co/api/spells/ — retorna a lista de magias disponíveis.
-O consumo é feito diretamente pelo app Flutter usando o pacote http.
+- O consumo é feito diretamente pelo app Flutter usando o pacote http.
 2. Exemplo de requisição:
 ```
 final resp = await http.get(Uri.parse('https://www.dnd5eapi.co/api/classes/'));
