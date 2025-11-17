@@ -35,7 +35,7 @@ class CharactersPage extends StatelessWidget {
             icon: const Icon(Icons.account_circle),
             tooltip: 'Perfil',
             onPressed: () async {
-              // Exibe diálogo ou pop-up
+              
               showDialog(
                 context: context,
                 builder: (ctx) => AlertDialog(
