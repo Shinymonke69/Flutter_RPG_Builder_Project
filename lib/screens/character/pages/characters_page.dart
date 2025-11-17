@@ -49,9 +49,9 @@ class CharactersPage extends StatelessWidget {
                     TextButton(
                       onPressed: () async {
                         Navigator.of(ctx).pop();
-                        // Chame o método de logout (ajuste para seu AuthService)
+                        
                         await Provider.of<AuthService>(context, listen: false).signOut();
-                        // Redirecione para tela de login, se necessário
+                        
                         Navigator.of(context).pushReplacementNamed('/login');
                       },
                       child: const Text('Sair'),
