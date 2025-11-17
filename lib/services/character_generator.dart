@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:faker/faker.dart';
 
-// Textos prontos para sortear historia e inventário
 const List<String> historyExamples = [
   'Acólito: Cresceu servindo em um templo, aprendendo rituais sagrados e ajudando fiéis.',
   'Soldado: Lutou em batalhas pelo reino, conhece táticas de guerra e tem contatos militares.',
@@ -22,7 +21,7 @@ const List<String> inventoryExamples = [
   'Bolsa de moedas, carta misteriosa, lanterna',
 ];
 
-// atributos do RPG
+// atributos
 Map<String, int> generateAttributes() {
   final rand = Random();
   return {
@@ -35,14 +34,14 @@ Map<String, int> generateAttributes() {
   };
 }
 
-// nome/sobrenome simples
+
 final faker = Faker();
 String firstName = faker.person.firstName();
 String lastName = faker.person.lastName();
 
 String getRandom(List<String> list) => list[Random().nextInt(list.length)];
 
-// classe da D&D API
+// classe
 Future<String> getRandomClass() async {
   final resp = await http.get(Uri.parse('https://www.dnd5eapi.co/api/classes/'));
   if (resp.statusCode == 200) {
@@ -55,7 +54,7 @@ Future<String> getRandomClass() async {
   return 'Fighter';
 }
 
-// raça da D&D API
+// raça
 Future<String> getRandomRace() async {
   final resp = await http.get(Uri.parse('https://www.dnd5eapi.co/api/races/'));
   if (resp.statusCode == 200) {
@@ -68,7 +67,7 @@ Future<String> getRandomRace() async {
   return 'Human';
 }
 
-// magias/poderes da D&D API
+// magias
 Future<String> getRandomSpells([int count = 3]) async {
   final resp = await http.get(Uri.parse('https://www.dnd5eapi.co/api/spells/'));
   if (resp.statusCode == 200) {
@@ -84,7 +83,6 @@ Future<String> getRandomSpells([int count = 3]) async {
   return '';
 }
 
-// Função que gera personagem completo
 Future<Map<String, dynamic>> generateRandomCharacter(String userId) async {
   final faker = Faker();
   final name = faker.person.firstName();
