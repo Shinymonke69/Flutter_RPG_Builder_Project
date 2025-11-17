@@ -32,7 +32,7 @@ npm install firebase
 ```
 3. Configure o Firebase para Web:
 - No seu navegador faça login no site do [Firebase](https://firebase.google.com/), logo após fazer login vá até [Firebase Console](https://console.firebase.google.com/) e crie um novo projeto do Firebase com nome de ***rpg-builder*** e siga os passos do Firebase.
-- Depois de criar sua Firebase ma visão geral do projeto terá um engrenagem e nela terá a opção de configurar seu projeto ***Geral*** -> ***Adicionar Aplicativo*** -> ***web*** -> Nome do app ***rpg-builder*** -> site do Firebase hosting vinculado ***selecionar seu projeto***.
+- Depois de criar sua Firebase na visão geral do projeto terá um engrenagem e nela terá a opção de configurar seu projeto ***Geral*** -> ***Adicionar Aplicativo*** -> ***web*** -> Nome do app ***rpg-builder*** -> site do Firebase hosting vinculado ***selecionar seu projeto***.
 - Após realizar tudo isso no seu vsCode na pasta lib edite seu ***firebase_options.dart*** com as informações que estão no seu Firebase Web:
 ```
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
