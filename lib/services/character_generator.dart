@@ -74,7 +74,7 @@ Future<String> getRandomSpells([int count = 3]) async {
     final json = jsonDecode(resp.body);
     final results = json['results'] as List;
     if (results.isEmpty) return '';
-    // Sorteia até 'count' magias
+    
     final rand = Random();
     final indices = List.generate(count, (_) => rand.nextInt(results.length));
     final names = indices.map((i) => results[i]['name']).toSet().toList();
