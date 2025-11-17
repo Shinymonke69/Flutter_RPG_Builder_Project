@@ -38,7 +38,7 @@ class CharacterCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 14),
-              // Dados do personagem
+              
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,7 +68,7 @@ class CharacterCard extends StatelessWidget {
                   ],
                 ),
               ),
-              // Botões de editar e excluir
+              
               IconButton(
                 icon: const Icon(Icons.edit, color: Colors.blueAccent),
                 tooltip: 'Editar',
