@@ -14,7 +14,7 @@ class CharacterDetailPage extends StatelessWidget {
           '${character.name} ${character.surname ?? ""}',
           style: const TextStyle(color: Colors.white),
         ),
-        backgroundColor: const Color(0xFF6F4E37), // Cor marrom igual às outras páginas
+        backgroundColor: const Color(0xFF6F4E37), 
         iconTheme: const IconThemeData(color: Colors.white),
         elevation: 1,
       ),
@@ -43,7 +43,7 @@ class CharacterDetailPage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white, // para contraste e visual
+                    color: Colors.white,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -106,7 +106,7 @@ class CharacterDetailPage extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // cada atributo em linha igual antes
+                   
                     ...[
                       {'key': 'strength', 'label': 'Força'},
                       {'key': 'dexterity', 'label': 'Destreza'},
